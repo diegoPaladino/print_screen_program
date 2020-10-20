@@ -1,8 +1,9 @@
-#print_screen
-#importing the libraries
+#print_screen_3
 
+#importing the libraries
 import pyautogui as p
 import time as t
+
 
 #declarations
 def contagem():
@@ -20,11 +21,10 @@ def contagem():
     print('SORRIA!!')
     t.sleep(2)
 
-def print_screen():
-    p.keyDown('fn')
-    p.keyDown('printscreen')
-    p.keyUp('fn')
-    p.keyUp('printscreen')
+def print_screen_3():
+    im1 = pyautogui.screenshot()
+    im2 = pyautogui.screenshot('print_screen.png')
+
 #execution
 contagem()
-print_screen()
+print_screen_3()
